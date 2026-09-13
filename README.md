@@ -1,7 +1,5 @@
 <div align="center">
 
-# BuffSo
-
 ### AI를 더해 기술을 비즈니스 가치로 연결하는 풀스택 개발자
 
 AI로 빠르게 구현하고, 판단과 검증에 집중합니다.<br>
@@ -54,19 +52,6 @@ AI로 빠르게 구현하고, 판단과 검증에 집중합니다.<br>
 | **Data** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | **Infra** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) |
 | **AI** | ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Anthropic API](https://img.shields.io/badge/Anthropic_API-191919?style=flat-square&logo=anthropic&logoColor=white) |
-
----
-
-## 📂 Public Repositories
-
-| 레포 | 내용 |
-|---|---|
-| [**aitools**](https://github.com/BuffSo/aitools) | 기업 공식 홈페이지 · Next.js 16 · Resend · Vitest 44건 · Playwright · 명세 → 계획 → 태스크 단위 AI 개발 · [aitoolz.kr](https://aitoolz.kr) |
-| [**brainhouse**](https://github.com/BuffSo/brainhouse) | 기업 소개 웹사이트 · Next.js 14 · Three.js · Resend |
-| [**lotto-lambda-collector**](https://github.com/BuffSo/lotto-lambda-collector) | GENYS Lotto AI의 당첨번호 수집기 · AWS Lambda + EventBridge |
-| [**DocThru**](https://github.com/BuffSo/2gi-docthru-3team-be) | 팀 프로젝트 · **팀장 · 백엔드** |
-| [**view My Startup**](https://github.com/BuffSo/season2-View-My-Startup-3team-BE) | 팀 프로젝트 · 풀스택 |
-| [**Fitmate**](https://github.com/BuffSo/FitMate-BE) | 팀 프로젝트 · 백엔드 (NestJS) |
 
 ---
 
