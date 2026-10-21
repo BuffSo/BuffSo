@@ -3,7 +3,9 @@
 ### AI를 더해 기술을 비즈니스 가치로 연결하는 풀스택 개발자
 
 AI로 빠르게 구현하고, 판단과 검증에 집중합니다.<br>
-혼자서도 팀의 속도로 **기획부터 개발, 배포까지** 완주합니다.
+**기획부터 디자인, 개발, 배포까지** 전 과정을 다룹니다.
+
+**[jakeso.dev](https://jakeso.dev)** · [이력서](https://jakeso.dev/resume) · [AI 활용 사례](https://jakeso.dev/ai/case)
 
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
@@ -20,10 +22,11 @@ AI로 빠르게 구현하고, 판단과 검증에 집중합니다.<br>
 
 | 서비스 | 무엇을 | 기술적 핵심 |
 |---|---|---|
-| **[ProWith](https://prowith.kr)**<br><sub>MLM 정산 솔루션</sub> | 그누보드5 레거시를 새로 구축한 **멀티테넌트** 정산 플랫폼 | 추천·후원 **이중 트리 정산 엔진**(수당 최대 13종 × 마감 4종) · 마감 취소 시 스냅샷 복원<br>NestJS **19개 모듈 · 290여 REST API** · 관리자 화면 60개 · 설정값 215개 DB 중앙 관리 |
-| **[Recoeve](https://recoeve.com)**<br><sub>소셜 큐레이션 플랫폼</sub> | 레거시 Java(Vert.x) 서비스를 **Turborepo 모노레포로 재구축** | BullMQ 워커 기반 **LLM 파이프라인**(Haiku 요약 → Sonnet 생성)<br>JWT(RS256) + RBAC · Google/Kakao OAuth · 실패 시 **멱등 환불** |
+| **[Recueve](https://recueve.com)**<br><sub>콘텐츠 큐레이션 플랫폼</sub> | 흩어진 관심사를 한곳에 모으는 플랫폼 | BullMQ 워커 기반 **LLM 파이프라인**(Haiku 요약 → Sonnet 생성) · 실패 시 **크레딧 자동 환불**<br>NestJS + Next.js **Turborepo 모노레포** · JWT(RS256) + RBAC · Google/Kakao OAuth |
+| **[ProWith](https://prowith.kr)**<br><sub>MLM 정산 솔루션</sub> | 보상플랜과 쇼핑몰을 **설정으로 켜고 끄는** 멀티테넌트 정산 솔루션 | 추천·후원 **이중 트리 정산 엔진**(마감 최대 4종 · 수당 최대 13종) · 마감 취소 시 스냅샷 복원<br>NestJS **23개 모듈 · 340여 REST API** · 관리자 화면 63개 · 설정값 281개 DB 중앙 관리 |
 | **[GENYS Lotto AI](https://lotto.genys.kr)**<br><sub>통계 분석 + AI 예측</sub> | 역대 추첨 데이터 기반 패턴 분석 서비스 | AWS Lambda + EventBridge **서버리스 수집 파이프라인**<br>분석 API **966ms → 31ms** · 예측 API **10초 → 2초** |
 
+> 💡 **Recueve**는 회원가입하면 AI 크레딧 30개로 직접 레코를 만들어 볼 수 있습니다.<br>
 > 💡 **ProWith**는 로그인 화면의 `DEMO Login` → `시스템 관리자`로 들어가면 계정 없이 전체 관리 기능을 볼 수 있습니다.<br>
 > 세 서비스의 코드는 비공개 저장소로 관리하고 있습니다.
 
@@ -31,15 +34,17 @@ AI로 빠르게 구현하고, 판단과 검증에 집중합니다.<br>
 
 ## 🤖 Harness Engineering
 
-**설계 방향과 합격 기준은 직접 정하고, 구현과 검증은 AI 워크플로우로 돌립니다.**
+**AI가 기준을 벗어나지 않게 하네스를 먼저 갖추고, 그 위에서 빠르게 구현합니다.**
 
 - **반복 운영 업무를 에이전트 스킬 6종으로 표준화** (ProWith)
   - 신규 고객사 셋업을 명령 한 번으로: DB · GitHub · AWS · Vercel · 도메인 연결 · 배포
   - 보상플랜 문서(hwp · pptx) → 규격 문서 → 설정 반영 → 마감 검증까지 **체인으로 연결**
 - **검증까지 자동화**
   - 보상플랜 **불변식(invariant) 검사** + 운영 덤프 **재마감 전수 대조**, 한 건이라도 어긋나면 통과하지 않음
-- **AI를 제품 기능으로** (Recoeve)
-  - LLM 호출을 결제 트랜잭션처럼 설계: row lock 차감 · 캐시 · 입력 소스 5종 폴백 · 실패 시 멱등 환불
+- **AI를 제품 기능으로** (Recueve)
+  - LLM 호출을 과금되는 트랜잭션으로 보고 정산처럼 설계: row lock 차감 · 캐시 · 입력 소스 5종 폴백 · 실패 시 멱등 환불
+- **이 방식을 공개 저장소로** ([jake-homepage](https://github.com/BuffSo/jake-homepage))
+  - 기획 문서와 결정 기록(ADR)을 먼저 쓰고, AI와 함께 구현하고, 커밋 전 검사와 CI로 확인하는 개인 홈페이지
 
 ---
 
