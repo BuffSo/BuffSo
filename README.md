@@ -5,7 +5,7 @@
 AI로 빠르게 구현하고, 판단과 검증에 집중합니다.<br>
 **기획부터 디자인, 개발, 배포까지** 전 과정을 다룹니다.
 
-**[jakeso.dev](https://jakeso.dev)** · [이력서](https://jakeso.dev/resume) · [AI 활용 사례](https://jakeso.dev/ai/case)
+**[jakeso.dev](https://jakeso.dev)**
 
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
